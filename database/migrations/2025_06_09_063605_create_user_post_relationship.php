@@ -11,11 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('roles', function (Blueprint $table) {
+        Schema::create('user_post_relationship', function (Blueprint $table) {
             $table->id();
-            $table->string('role_name')->comment('Name of the role (e.g., Admin, Editor, User)');
-            $table->string('description')->nullable()->comment('Description of the role');
-            $table->timestamps()->comment('Timestamps for the role (created_at, updated_at)');
+            $table->timestamps();
         });
     }
 
@@ -24,6 +22,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('roles');
+        Schema::dropIfExists('user_post_relationship');
     }
 };
