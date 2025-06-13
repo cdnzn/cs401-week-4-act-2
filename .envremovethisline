@@ -1,6 +1,6 @@
 APP_NAME=Laravel
 APP_ENV=local
-APP_KEY=base64:XpqJmbFjCaOQpsR6nXG/dKtCPgFUz6QEkcH7zB4X4eU=
+APP_KEY=base64:FPLTUYBxX7cffH9zBRBnAcQysK1oaEFPvrvOvh6Fug0=
 APP_DEBUG=true
 APP_URL=http://localhost
 
@@ -21,6 +21,7 @@ LOG_DEPRECATIONS_CHANNEL=null
 LOG_LEVEL=debug
 
 DB_CONNECTION=sqlite
+DB_DATABASE=database/database.sqlite
 # DB_HOST=127.0.0.1
 # DB_PORT=3306
 # DB_DATABASE=laravel
